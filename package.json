@@ -5,38 +5,35 @@
   "keywords": [
     "packages-keywords"
   ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "homepage": "packages-homepage",
+  "main": "dist/packages-name.umd.cjs",
+  "module": "dist/packages-name.js",
   "exports": {
     ".": {
-      "require": "./dist/packages-name.cjs",
-      "import": "./dist/packages-name.mjs"
+      "require": "./dist/packages-name.js",
+      "import": "./dist/packages-name.umd.cjs"
     }
   },
   "peerDependencies": {
     "vue": "^3.3.4"
   },
-  "main": "dist/packages-name.cjs",
-  "module": "dist/packages-name.mjs",
   "scripts": {
-    "build": "rollup --config ./rollup.config.mjs"
+    "build": "vite build"
   },
   "author": "微光北下",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-babel": "^6.0.3",
-    "@rollup/plugin-commonjs": "^24.1.0",
-    "@rollup/plugin-node-resolve": "^15.0.2",
-    "@rollup/plugin-terser": "^0.4.1",
-    "@rollup/plugin-typescript": "^11.1.2",
-    "@types/node": "^20.3.3",
-    "glob": "^7.1.7",
-    "prettier": "^3.0.3",
-    "rollup": "^3.21.5",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.35.0",
-    "rollup-plugin-vue": "^6.0.0",
-    "sass": "^1.66.1",
-    "tslib": "^2.6.0",
-    "typescript": "^5.2.2"
+    "@types/node": "^18.15.11",
+    "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.60.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vite-plugin-dts": "^2.2.0",
+    "vite-plugin-libcss": "^1.0.6",
+    "vue-tsc": "^0.40.4"
   }
 }
