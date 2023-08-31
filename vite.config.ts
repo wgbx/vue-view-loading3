@@ -13,7 +13,7 @@ export default defineConfig({
     lib: {
       entry: resolve('packages', 'index.ts'),
       name: 'VueViewLoading',
-      fileName: 'vue3-view-loading'
+      fileName: 'vue-view-loading3'
     },
     rollupOptions: {
       external: ['vue'],

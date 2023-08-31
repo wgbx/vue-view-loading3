@@ -1,21 +1,22 @@
 {
-  "name": "packages-name",
-  "version": "0.0.1",
-  "description": "packages-description",
+  "name": "vue-view-loading3",
+  "version": "0.0.2",
+  "description": "vue3 version of page loading",
   "keywords": [
-    "packages-keywords"
+    "vue",
+    "view-loading"
   ],
+  "types": "index.d.ts",
   "type": "module",
   "files": [
     "dist"
   ],
-  "homepage": "packages-homepage",
-  "main": "dist/packages-name.umd.cjs",
-  "module": "dist/packages-name.js",
+  "main": "dist/vue-view-loading3.umd.cjs",
+  "module": "dist/vue-view-loading3.js",
   "exports": {
     ".": {
-      "import": "./dist/packages-name.js",
-      "require": "./dist/packages-name.umd.cjs"
+      "require": "./dist/vue-view-loading3.umd.cjs",
+      "import": "./dist/vue-view-loading3.js"
     }
   },
   "peerDependencies": {
