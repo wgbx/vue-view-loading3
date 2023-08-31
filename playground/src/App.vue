@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineOptions({ name: 'playground' })
 
-import ViewLoading from '../../dist/vue3-view-loading.js'
+import ViewLoading from '../../dist/vue-view-loading3.js'
 
 function getFetch() {
   return new Promise((_, reject) => {
